@@ -1,7 +1,7 @@
 # Harvest all the .ncml files in the FRF folder 
 # on the USACE CHL THREDDS Server
 #
-# docker run -v $(pwd)/harvest_frf.py:/srv/harvest.py -v $(pwd)/iso:/srv/iso axiom/thredds_iso_harvester
+# docker run --rm -v $(pwd)/harvest_frf.py:/srv/harvest.py -v $(pwd)/iso:/srv/iso axiom/thredds_iso_harvester
 
 from thredds_iso_harvester.harvest import ThreddsIsoHarvester
 from thredds_crawler.crawl import Crawl
